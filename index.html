@@ -1,73 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MerlinoMath – Página</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0d1117;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #0d1117;
-      border-bottom: 1px solid #30363d;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #ffffff;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background: #00b7ff;
-      color: #0d1117;
-      border-radius: 5px;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 2rem;
-      color: #00b7ff;
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #161b22;
-      border-top: 1px solid #30363d;
-      color: #8b949e;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MerlinoMath – Matemáticas con Imaginación</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: #161b22;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00b7ff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #00b7ff;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #c9d1d9;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0d1117;
+            border-bottom: 1px solid #30363d;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #00b7ff;
+            color: #0d1117;
+            border-radius: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #0d1117, #0a84b4);
+        }
+        .hero h2 {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #d0d7de;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #00b7ff;
+            color: #0d1117;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .btn:hover {
+            background: #00a0e0;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #00b7ff;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            border: 1px solid #30363d;
+        }
+        .card h4 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #c9d1d9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #161b22;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>MerlinoMath</h1>
+        <p>Matemáticas y ciencias con imaginación – Aprende como nunca antes</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="animaciones.html">Animaciones</a>
-    <a href="reservas.html">Reservas</a>
-    <a href="pago.html">Pago</a>
-    <a href="blog/index.html">Blog</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#animaciones">Animaciones</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-  <section class="section">
-    <h2>Nombre de la página</h2>
-    <p>Contenido en construcción...</p>
-  </section>
+    <section class="hero">
+        <h2>Animaciones y clases personalizadas de Matemáticas y Ciencias</h2>
+        <p>Desde primaria hasta universidad. Traemos los conceptos más complejos a la vida con visualizaciones hechas a medida. 
+        Ejercicios, explicaciones y vídeos diferidos: aprende a tu ritmo y con claridad.</p>
+        <a href="#contacto" class="btn">Solicita una clase</a>
+    </section>
 
-  <footer>
-    <p>© 2025 MerlinoMath – Matemáticas con Imaginación</p>
-  </footer>
+    <section class="section" id="servicios">
+        <h3>¿Qué ofrecemos?</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Clases Online</h4>
+                <p>Explicaciones claras, adaptadas a tu nivel y necesidades, desde primaria hasta universidad.</p>
+            </div>
+            <div class="card">
+                <h4>Animaciones Personalizadas</h4>
+                <p>Visualizamos tus ejercicios con Manim: las matemáticas y la física cobran vida.</p>
+            </div>
+            <div class="card">
+                <h4>Vídeos a Pedido</h4>
+                <p>Solicita una explicación concreta y recibe un vídeo personalizado, para verlo cuando quieras.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="section" id="animaciones">
+        <h3>Explora nuestras visualizaciones</h3>
+        <p>Una muestra de nuestras animaciones creadas con <strong>Manim</strong> para ilustrar conceptos complejos.</p>
+    </section>
+
+    <section class="section" id="contacto">
+        <h3>Contacto</h3>
+        <p>¿Quieres una clase o animación personalizada? Escríbenos:</p>
+        <p><strong>Email:</strong> contacto@merlinomath.com</p>
+        <p><strong>WhatsApp:</strong> +34 600 000 000</p>
+    </section>
+
+    <footer>
+        <p>© 2025 MerlinoMath – Matemáticas con Imaginación</p>
+    </footer>
 </body>
 </html>
