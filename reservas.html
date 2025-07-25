@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reservas - Merlino Math</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+      color: #c9d1d9;
+    }
+    th, td {
+      border: 1px solid #30363d;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #161b22;
+      color: #00b7ff;
+    }
+    .btn-reservar {
+      background-color: #00b7ff;
+      color: #0d1117;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-reservar:hover {
+      background-color: #009fd1;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,9 +48,37 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-  <main>
+
+  <main class="section">
     <h2>Reservas</h2>
-    <p>Formulario o sistema de reservas para sesiones privadas.</p>
+    <p>Selecciona un horario para tu clase privada:</p>
+
+    <table>
+      <tr>
+        <th>Día</th>
+        <th>Hora</th>
+        <th>Disponibilidad</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Lunes</td>
+        <td>16:00 - 17:00</td>
+        <td>Disponible</td>
+        <td><a href="pago.html"><button class="btn-reservar">Reservar</button></a></td>
+      </tr>
+      <tr>
+        <td>Martes</td>
+        <td>18:00 - 19:00</td>
+        <td>Disponible</td>
+        <td><a href="pago.html"><button class="btn-reservar">Reservar</button></a></td>
+      </tr>
+      <tr>
+        <td>Miércoles</td>
+        <td>17:00 - 18:00</td>
+        <td>Disponible</td>
+        <td><a href="pago.html"><button class="btn-reservar">Reservar</button></a></td>
+      </tr>
+    </table>
   </main>
 </body>
 </html>
