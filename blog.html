@@ -2,58 +2,86 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Merlino Math - Blog</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Merlino Math</title>
+  <style>
+    body {
+      background: #0d1117;
+      color: #c9d1d9;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0 1rem;
+    }
+    header, footer {
+      background: #161b22;
+      color: #8b949e;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav {
+      background: #0d1117;
+      border-bottom: 1px solid #30363d;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #00b7ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #161b22;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+    ul li a {
+      color: #00b7ff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1><a href="index.html">Merlino Math</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="animaciones.html">Animaciones</a></li>
-        <li><a href="reservas.html">Reservas</a></li>
-        <li><a href="pago.html">Pago</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
+    <h1>Merlino Math - Blog</h1>
   </header>
-
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="animaciones.html">Animaciones</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="pago.html">Pago</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </nav>
   <main>
-    <section>
-      <h2>Blog de Merlino Math</h2>
-      <p>Explora artículos, ideas y reflexiones sobre matemáticas, arte, visualización y educación.</p>
-      
-      <article>
-        <h3>🌌 Euler y la belleza de la identidad más famosa</h3>
-        <p><em>Publicado el 20 de julio de 2025</em></p>
-        <p>La fórmula de Euler conecta exponenciales complejos con las funciones sinusoidales. Aquí desglosamos su magia y cómo animarla visualmente.</p>
-        <a href="#">Leer más</a>
-      </article>
-
-      <article>
-        <h3>🌀 ¿Por qué visualizar la topología?</h3>
-        <p><em>Publicado el 14 de julio de 2025</em></p>
-        <p>La topología no tiene por qué ser abstracta. A través de animaciones interactivas, podemos "ver" cómo cambian las formas y sus propiedades.</p>
-        <a href="#">Leer más</a>
-      </article>
-
-      <article>
-        <h3>📽️ De TikTok a clase: cómo uso Manim para enseñar</h3>
-        <p><em>Publicado el 1 de julio de 2025</em></p>
-        <p>Mi viaje desde crear vídeos en redes hasta construir explicaciones visuales personalizadas para estudiantes. La educación cambia cuando ves las ideas moverse.</p>
-        <a href="#">Leer más</a>
-      </article>
-
-      <p style="margin-top: 2rem;"><em>Muy pronto: más entradas, colaboraciones y recursos visuales educativos.</em></p>
-    </section>
+    <h2>Últimos artículos</h2>
+    <ul>
+      <li><a href="blog_entrada1.html">¿Por qué visualizar las matemáticas?</a></li>
+      <li><a href="blog_entrada2.html">Euler y la belleza en la fórmula más profunda</a></li>
+    </ul>
   </main>
-
   <footer>
-    <p>&copy; 2025 Merlino Math · Todos los derechos reservados</p>
+    <p>&copy; 2025 Merlino Math – Matemáticas con Imaginación</p>
   </footer>
 </body>
 </html>
