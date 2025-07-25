@@ -2,55 +2,87 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MerlinoMath</title>
   <style>
     body {
+      background-color: #0d1117;
+      color: #c9d1d9;
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #ffffff, #eef2f3);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      margin: 0;
     }
-
+    header, footer {
+      background-color: #161b22;
+      padding: 1rem;
+      text-align: center;
+    }
     h1 {
-      font-size: 3.2em;
-      color: #1a1a1a;
-      margin-bottom: 10px;
+      margin: 0;
     }
-
-    h2 {
-      font-size: 1.5em;
-      font-weight: normal;
-      color: #555;
-      margin-top: 0;
+    nav {
+      background-color: #21262d;
+      padding: 0.5rem;
+      text-align: center;
     }
-
-    a.button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 15px 30px;
-      background-color: #007acc;
-      color: white;
+    nav a {
+      color: #58a6ff;
+      margin: 0 1rem;
       text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
     }
-
-    a.button:hover {
-      background-color: #005fa3;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a.post-link {
+      color: #c9d1d9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a.post-link:hover {
+      color: #58a6ff;
     }
   </style>
 </head>
 <body>
-  <h1>MerlinoMath</h1>
-  <h2>matemáticas y física visuales</h2>
 
-  <a class="button" href="blog/index.html">Explorar el blog →</a>
+  <header>
+    <h1>MerlinoMath</h1>
+    <p>matemáticas y física para todos</p>
+  </header>
+
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/blog/entrada1/">Blog</a>
+    <a href="/servicios/">Servicios</a>
+    <a href="/animaciones/">Animaciones</a>
+    <a href="/reservas/">Reservas</a>
+    <a href="/contacto/">Contacto</a>
+  </nav>
+
+  <div class="content">
+    <h2>Últimos posts</h2>
+    <ul>
+      <li><a class="post-link" href="/blog/entrada1/">🧠 ¿Qué es una función continua?</a></li>
+      <li><a class="post-link" href="/blog/entrada2/">📐 Por qué el determinante se anula</a></li>
+      <li><a class="post-link" href="/blog/entrada3/">📊 La paradoja de Cantor animada</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MerlinoMath</p>
+  </footer>
+
 </body>
 </html>
